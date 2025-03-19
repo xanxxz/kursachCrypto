@@ -1,0 +1,35 @@
+.header__menu {
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+  margin-inline-start: 130px;
+  margin-inline-end: 130px;
+}
+
+.header__menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.header__menu-list-item__buttons {
+  display: flex;
+  gap: 32px;
+}
+
+.header__menu-list-item__sign-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.sign {
+  border: 1px solid #fff;
+  min-inline-size: 96px;
+  min-block-size: 40px;
+  font-size: var(--sign-button-font-size);
+}
+
+.sign-up {
+  background: linear-gradient(225deg, #18C8FF 14.89%, #933FFE 85.85%);
+  border: 1px solid #633FFE 14.89%;
+}

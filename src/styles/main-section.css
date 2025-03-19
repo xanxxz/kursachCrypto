@@ -1,0 +1,16 @@
+.main-section__content {
+  margin-block-start: 170px;
+  margin-block-end: 170px;
+  margin-inline-start: 330px;
+  margin-inline-end: 330px;
+
+  display: grid;
+}
+
+.main-section__title {
+  font-size: 85px;
+}
+
+.main-section__subtitle {
+  font-size: 16px;
+}
