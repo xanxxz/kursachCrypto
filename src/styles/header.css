@@ -1,8 +1,9 @@
 .header__menu {
   margin-block-start: 20px;
   margin-block-end: 20px;
-  margin-inline-start: 130px;
-  margin-inline-end: 130px;
+  margin-inline: 7vw;
+  position: sticky;
+  top: 10px;
 }
 
 .header__menu-list {
@@ -15,6 +16,7 @@
 .header__menu-list-item__buttons {
   display: flex;
   gap: 32px;
+  margin-inline-start: 80px;
 }
 
 .header__menu-list-item__sign-buttons {

@@ -1,0 +1,12 @@
+.doc-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  border-bottom: 1px solid #1A1B23;
+}
+
+.doc-section .get_started-section__container-image {
+  display: flex;
+  justify-content: end;
+}

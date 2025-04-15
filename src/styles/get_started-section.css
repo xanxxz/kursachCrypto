@@ -1,0 +1,32 @@
+.get_started-section {
+  padding-block: 140px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.get_started-section .sign-up {
+  inline-size: 156px;
+  block-size: 50px;
+}
+
+.get_started-section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-inline-size: 780px;
+  max-block-size: 282px;
+  gap: 16px;
+}
+
+.get_started-section__title {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 130%;
+  text-align: center;
+}
+
+.get_started-section__text {
+  max-inline-size: 580px;
+}

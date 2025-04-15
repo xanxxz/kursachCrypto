@@ -1,16 +1,28 @@
-.main-section__content {
+.main-section {
   margin-block-start: 170px;
-  margin-block-end: 170px;
-  margin-inline-start: 330px;
-  margin-inline-end: 330px;
+  margin-block-end: 200px;
+}
 
-  display: grid;
+.main-section .sign-up {
+  inline-size: 156px;
+  block-size: 50px;
+}
+
+.main-section__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .main-section__title {
+  max-inline-size: 780px;
+  line-height: 130%;
   font-size: 85px;
+  text-align: center;
+  font-weight: 900;
 }
 
 .main-section__subtitle {
-  font-size: 16px;
+  max-inline-size: 500px;
 }

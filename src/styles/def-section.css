@@ -1,0 +1,31 @@
+.def-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+.def-section .sign {
+  inline-size: 156px;
+  block-size: 50px;
+}
+
+.get_started-section__container-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.get_started-section__container-image {
+  min-inline-size: 580px;
+}
+
+.get_started-section__container-info {
+  max-inline-size: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.container-info {
+  text-align: left;
+}
