@@ -7,6 +7,8 @@
 .def-section .sign {
   inline-size: 156px;
   block-size: 50px;
+  background: transparent;
+  border: 1px solid #fff;
 }
 
 .get_started-section__container-text {

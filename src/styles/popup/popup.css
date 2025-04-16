@@ -1,5 +1,18 @@
-.popup-filter {
-  display: flex;
+.popup-filter-sign-up {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.popup-filter-log-in {
+  display: none;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, .7);
@@ -21,19 +34,31 @@
   justify-content: center
 }
 
+.popup_type_log-in {
+  block-size: 500px;
+  padding: 0 30px 30px 30px;
+}
+
 .popup__content {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  position: relative;
 }
-
 .popup__form {
   display: grid;
-  gap: 30px;
 }
 
-.popup__close {
+.popup-close__button {
   position: absolute;
+  top: -18px;
+  left: 380px;
+}
+
+.popup-close__button-sing-in {
+  position: absolute;
+  top: 32px;
+  left: 380px;
 }
 
 .popup__title {
@@ -47,6 +72,14 @@
   border: 1px solid var(--text-color);
   font-size: 20px;
   font-weight: 600;
+  margin-top: 15px;
+  opacity: 1;
+  transition: opacity .3s ease;
+}
+
+.popup__button:hover {
+  opacity: .6;
+  transition: opacity .3s ease;
 }
 
 .input-text {
@@ -59,4 +92,13 @@
 
 .form__input-error {
   color: #FF8282;
+  display: block;
+  max-inline-size: 410px;
+  padding-top: 5px;
+  padding-left: 5px;
+  block-size: 30px;
+}
+
+#password-input {
+  -webkit-text-security: disc;
 }

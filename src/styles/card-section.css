@@ -46,6 +46,8 @@
 }
 
 .card__box-button {
+  background: transparent;
+  border: none;
   color: #B982FF;
   font-size: 16px;
   font-weight: 600;

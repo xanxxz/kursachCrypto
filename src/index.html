@@ -19,24 +19,24 @@
           >
         </li>
         <li class="header__menu-list-item__buttons">
-          <button class="button" type="button">
+          <button class="button not" type="button">
             Buy / Sell
           </button>
-          <button class="button" type="button">
+          <button class="button not" type="button">
             Grow
           </button>
-          <button class="button" type="button">
+          <button class="button not" type="button">
             Markets
           </button>
-          <button class="button" type="button">
+          <button class="button not" type="button">
             Business
           </button>
-          <button class="button" type="button">
+          <button class="button not" type="button">
             Support
           </button>
         </li>
         <li class="header__menu-list-item__sign-buttons">
-          <button class="button sign" type="button">
+          <button class="button log-in sign" type="button">
             <span>Sign in</span>
           </button>
           <button class="button sign sign-up" type="button">
@@ -74,7 +74,7 @@
             </p>
           </div>
           <div class="card-section__list-item__box">
-            <button class="button card__box-button">
+            <button class="button sign-up card__box-button">
               <span>Get Started</span>
               <img
               class="card__box-image"
@@ -101,7 +101,7 @@
             </p>
           </div>
           <div class="card-section__list-item__box">
-            <button class="button card__box-button">
+            <button class="button not card__box-button">
               <span>Find an ATM</span>
               <img
               class="card__box-image"
@@ -129,7 +129,7 @@
             </p>
           </div>
           <div class="card-section__list-item__box">
-            <button class="button card__box-button">
+            <button class="button not card__box-button">
               <span>Download the App</span>
               <img
               class="card__box-image"
@@ -178,7 +178,7 @@
           </p>
         </div>
         <div>
-          <button class="button sign" type="button">
+          <button class="button sign sign-up" type="button">
             <span>Get Started</span>
           </button>
         </div>
@@ -196,7 +196,7 @@
           </p>
         </div>
         <div class="buy-section__list-item__box">
-          <button class="button card__box-button">
+          <button class="button not card__box-button">
             <span>Download the App</span>
             <img
             class="card__box-image"
@@ -231,7 +231,7 @@
                 alt="Bitcoin"
                 loading="lazy"
               />
-              <button class="button table__box-button">
+              <button class="button sign-up table__box-button">
                 <span>Trade Now</span>
                 <img
                 class="card__box-image"
@@ -264,7 +264,7 @@
                 alt="Bitcoin"
                 loading="lazy"
               />
-              <button class="button table__box-button">
+              <button class="button sign-up table__box-button">
                 <span>Trade Now</span>
                 <img
                 class="card__box-image"
@@ -297,7 +297,7 @@
                 alt="Bitcoin"
                 loading="lazy"
               />
-              <button class="button table__box-button">
+              <button class="button sign-up table__box-button">
                 <span>Trade Now</span>
                 <img
                 class="card__box-image"
@@ -330,7 +330,7 @@
                 alt="Bitcoin"
                 loading="lazy"
               />
-              <button class="button table__box-button">
+              <button class="button sign-up table__box-button">
                 <span>Trade Now</span>
                 <img
                 class="card__box-image"
@@ -363,7 +363,7 @@
                 alt="Bitcoin"
                 loading="lazy"
               />
-              <button class="button table__box-button">
+              <button class="button sign-up table__box-button">
                 <span>Trade Now</span>
                 <img
                 class="card__box-image"
@@ -465,48 +465,105 @@
     </div>
   </footer>
 
-  <div class="popup-filter">
+  <div class="popup-filter-sign-up">
     <div class="popup popup_type_sign-up">
       <div class="popup__content">
-        <button type="button" class="popup__close"></button>
+        <button class="popup-close__button">
+          <img
+            class="popup-close"
+            src="<%=require('./images/close.svg')%>"
+            alt="close popup"
+          />
+        </button>
         <h3 class="popup__title">Sign up</h3>
         <form class="popup__form" name="sign-up" novalidate>
           <div class="input-box">
             <p class="input-text">Email</p>
             <input type="email" name="email" id="email-input" class="popup__input popup__input_type_email" 
               placeholder="example@gmail.com" 
-              required minlength="2" maxlength="30"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-              data-error-message="Are you a fool? enter your email address"
+              required 
+              minlength="2" maxlength="30"
+              pattern="^\S+@\S+\.\S+$"
+              data-error-message="Ты дурак? введи свою электронную почту"
             >
             <span class="form__input-error email-input-error"></span>
           </div>
           <div class="input-box">
             <p class="input-text">Create a password</p>
-            <input type="password" name="password" id="password-input" class="popup__input popup__input_type_password" 
+            <input type="text" name="password" id="password-input" class="popup__input popup__input_type_password" 
               placeholder="must be 8 characters" 
               required
               minlength="8" maxlength="30"
               autocomplete="new-password"
               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              data-error-message="You a fool..."
+              data-error-message="Ты дурак..."
             >
             <span class="form__input-error password-input-error"></span>
           </div>
           <div class="input-box">
             <p class="input-text">Confirm password</p>
-            <input type="password" name="password" id="password-input" class="popup__input popup__input_type_password" 
+            <input type="text" name="password" id="password-input" class="popup__input popup__input_type_password" 
               placeholder="repeat password" 
               required
               minlength="8" maxlength="30"
               autocomplete="new-password"
               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              data-error-message="You a fool..."
+              data-error-message="Ты дурак..."
             >
             <span class="form__input-error password-input-error"></span>
           </div>
-          <button type="submit" class="button popup__button">Log in</button>
+          <button type="submit" class="popup__button">Sign up</button>
         </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup-filter-log-in">
+    <div class="popup popup_type_log-in">
+      <div class="popup__content">
+        <button class="popup-close__button-sing-in">
+          <img
+            class="popup-close"
+            src="<%=require('./images/close.svg')%>"
+            alt="close popup"
+          />
+        </button>
+        <button type="button" class="popup__close"></button>
+        <h3 class="popup__title">Sing in</h3>
+        <form class="popup__form" name="log-in" novalidate>
+          <div class="input-box">
+            <p class="input-text">Email</p>
+            <input type="email" name="email" id="email-input" class="popup__input popup__input_type_email"
+              placeholder="example@gmail.com" 
+              required 
+              minlength="2" maxlength="30"
+              pattern="^\S+@\S+\.\S+$"
+              data-error-message="Ты дурак? введи свою электронную почту"
+            >
+            <span class="form__input-error email-input-error"></span>
+          </div>
+          <div class="input-box">
+            <p class="input-text">Password</p>
+            <input type="text" name="password" id="password-input" class="popup__input popup__input_type_password" 
+              placeholder="enter password" 
+              required
+              minlength="8" maxlength="30"
+              autocomplete="new-password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              data-error-message="Ты дурак..."
+            >
+            <span class="form__input-error password-input-error"></span>
+          </div>
+          <button type="submit" class="popup__button">Sing in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup-filter-not">
+    <div class="popup popup_type_not">
+      <div class="popup__content">
+        <h3 class="popup__title-not">not yet</h3>
       </div>
     </div>
   </div>

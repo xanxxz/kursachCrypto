@@ -1,0 +1,27 @@
+.popup-filter-not {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+.popup_type_not {
+  background: none;
+  inline-size: auto;
+  block-size: auto;
+}
+
+.popup_type_not .popup__content {
+  position: relative;
+  top: -350px;
+}
+
+.popup__title-not {
+  font-size: 30px;
+  color: #FF8282;
+}

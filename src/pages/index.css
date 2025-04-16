@@ -9,8 +9,9 @@
 @import url('../styles/buy-section.css');
 @import url('../styles/footer.css');
 @import url('../styles/popup/popup.css');
+@import url('../styles/popup/popup-not.css');
 @import url('../styles/popup/popup_is-animated.css');
-@import url('../styles/popup/popup_is-opened');
+@import url('../styles/popup/popup_is-opened.css');
 
 .page {
   background-color: var(--background-color);

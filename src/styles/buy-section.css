@@ -78,4 +78,6 @@
 
 .table__box-button {
   text-align: end;
+  background: transparent;
+  border: none;
 }
