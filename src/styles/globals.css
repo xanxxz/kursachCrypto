@@ -151,3 +151,11 @@ input::placeholder {
   pointer-events: none;
   opacity: .6;
 }
+
+.logout-button {
+  color: #FF8282;
+}
+
+.user-email {
+  padding-block-start: 1px;
+}

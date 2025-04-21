@@ -65,6 +65,7 @@
 }
 
 .memcoin__delete {
+  color: #FF8282;
   font-size: 22px;
   font-weight: 600;
   padding-block-end: 5px;

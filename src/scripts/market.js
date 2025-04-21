@@ -43,8 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const email = localStorage.getItem('email');
 
   if (!email) {
-    alert('Сначала войдите в аккаунт');
-    location.href = 'index.html';
+    openModal(singUp);
+    clearValidation(singUp, validationConfig);
+    singUpForm.reset();
     return;
   }
 
