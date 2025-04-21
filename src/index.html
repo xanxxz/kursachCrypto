@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,12 +22,11 @@
           <button class="button not" type="button">
             Buy / Sell
           </button>
-          <button class="button not" type="button">
-            Grow
+          <button class="button" type="button" onclick="location.href='market.html'">
+            Create
           </button>
           <button class="button not" type="button">
             Markets
-          </button>
           <button class="button not" type="button">
             Business
           </button>
@@ -490,7 +489,7 @@
           </div>
           <div class="input-box">
             <p class="input-text">Create a password</p>
-            <input type="text" name="password" id="password-input" class="popup__input popup__input_type_password" 
+            <input type="password" name="password" id="password-input" class="popup__input popup__input_type_password" 
               placeholder="must be 8 characters" 
               required
               minlength="8" maxlength="30"
@@ -502,7 +501,7 @@
           </div>
           <div class="input-box">
             <p class="input-text">Confirm password</p>
-            <input type="text" name="password" id="password-input" class="popup__input popup__input_type_password" 
+            <input type="password" name="confirm-password" id="confirm-password-input" class="popup__input popup__input_type_password" 
               placeholder="repeat password" 
               required
               minlength="8" maxlength="30"
@@ -510,7 +509,7 @@
               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
               data-error-message="Ты дурак..."
             >
-            <span class="form__input-error password-input-error"></span>
+            <span class="form__input-error confirm-password-input-error"></span>
           </div>
           <button type="submit" class="popup__button">Sign up</button>
         </form>
@@ -544,7 +543,7 @@
           </div>
           <div class="input-box">
             <p class="input-text">Password</p>
-            <input type="text" name="password" id="password-input" class="popup__input popup__input_type_password" 
+            <input type="password" name="password" id="password-input" class="popup__input popup__input_type_password" 
               placeholder="enter password" 
               required
               minlength="8" maxlength="30"

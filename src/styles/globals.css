@@ -146,3 +146,8 @@ input::placeholder {
   font-size: 20px;
   font-weight: 400;
 }
+
+.actived {
+  pointer-events: none;
+  opacity: .6;
+}

@@ -1,0 +1,54 @@
+.create-section {
+  margin-block-start: 60px;
+  padding-block-end: 60px;
+  display: grid;
+  gap: 30px;
+}
+
+.create-section__title {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 130%;
+  inline-size: 600px;
+}
+
+.create-section__container {
+  display: grid;
+  grid-template-columns: 600px;
+  justify-content: space-between
+}
+
+.create__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box__create {
+  display: grid;
+  gap: 5px;
+}
+
+.input-text__create {
+  color: #fff;
+  font-size: 18px;
+  text-align: left;
+  padding-inline-start: 10px;
+}
+
+.create {
+  inline-size: 350px;
+}
+
+.create__button {
+  font-size: 25px;
+  inline-size: 300px;
+  block-size: 50px;
+  border: 1px solid #fff;
+  opacity: 1;
+  transition: opacity .3s ease;
+}
+
+.create__button:hover {
+  opacity: .6;
+  transition: opacity .3s ease;
+}

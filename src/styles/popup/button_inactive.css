@@ -1,3 +1,8 @@
 .button_inactive {
     pointer-events: none;
-  }
+
+}
+
+.popup-close__button:hover {
+  opacity: 1;
+}

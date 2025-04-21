@@ -53,12 +53,25 @@
   position: absolute;
   top: -18px;
   left: 380px;
+  opacity: 1;
+  transition: opacity .3s ease;
+}
+
+.popup-close__button:hover {
+  opacity: .6;
+  transition: opacity .3s ease;
 }
 
 .popup-close__button-sing-in {
   position: absolute;
   top: 32px;
   left: 380px;
+  transition: opacity .3s ease;
+}
+
+.popup-close__button-sing-in:hover {
+  opacity: .6;
+  transition: opacity .3s ease;
 }
 
 .popup__title {

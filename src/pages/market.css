@@ -1,13 +1,9 @@
 @import url('../styles/globals.css');
 @import url('../styles/variables.css');
 @import url('../styles/header.css');
-@import url('../styles/index/main-section.css');
-@import url('../styles/index/card-section.css');
-@import url('../styles/index/get_started-section.css');
-@import url('../styles/index/def-section.css');
-@import url('../styles/index/doc-section.css');
-@import url('../styles/index/buy-section.css');
 @import url('../styles/footer.css');
+@import url('../styles/market/create-section.css');
+@import url('../styles/market/place-section.css');
 @import url('../styles/popup/popup.css');
 @import url('../styles/popup/popup-not.css');
 @import url('../styles/popup/popup_is-animated.css');
@@ -18,4 +14,3 @@
   color: var(--text-color);
   font-family: Arial, Helvetica, sans-serif;
 }
-

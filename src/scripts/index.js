@@ -1,6 +1,7 @@
 import '../pages/index.css';
 import {openModal, closeModal, initOverlayClose} from './popup.js';
 import {enableValidation, clearValidation} from './validation.js';
+import {auth} from './auth.js';
 
 const singUp = document.querySelector('.popup-filter-sign-up');
 const logIn = document.querySelector('.popup-filter-log-in');
@@ -21,6 +22,8 @@ const validationConfig = {
   inputErrorClass: 'form__input_type_error',
   errorClass: 'form__input-error_active'
 };
+
+auth(closeModal, singUp, logIn);
 
 enableValidation(validationConfig);
 

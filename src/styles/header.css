@@ -6,11 +6,24 @@
   top: 10px;
 }
 
+
 .header__menu-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
+}
+
+.index-button {
+  opacity: 1;
+  transition: opacity .3s ease;
+  cursor: pointer;
+}
+
+.index-button:hover {
+  opacity: .6;
+  transition: opacity .3s ease;
+  cursor: pointer;
 }
 
 .header__menu-list-item__buttons {
