@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <link rel="icon" href="<%=require('./images/icon.svg')%>" type="image/svg+xml">
     <link rel="apple-touch-icon" href="<%=require('./images/icon.png')%>">
   </head>
-<body class="page">
+  <body class="page">
   <header class="header">
     <nav class="header__menu">
       <ul class="header__menu-list">
@@ -22,11 +22,12 @@
           <button class="button not" type="button">
             Buy / Sell
           </button>
-          <button class="button" type="button" onclick="location.href='create.html'">
+          <button class="button actived" type="button">
             Create
           </button>
-          <button class="button actived" type="button">
+          <button class="button" type="button" onclick="location.href='market.html'">
             Markets
+          </button>
           <button class="button not" type="button">
             Business
           </button>
@@ -46,13 +47,56 @@
     </nav>
   </header>
   <main class="main">
-    <section class="coins">
-      <div class="coins-market">
-        <h1 class="coins-market__title">All published memcoins</h1>
+    <section class="create-section">
+      <h1 class="create-section__title">Create your memcoin for free</h1>
+      <div class="create-section__container">
+        <form class="create__form" name="create">
+          <div class="input-box__create">
+            <p class="input-text__create">Create a name</p>
+            <input type="text" name="name-coin" id="name-coin-input" class="create create__input_type_name-coin" 
+              placeholder="Bitcoin"
+              required 
+              minlength="3" maxlength="12"
+            >
+            <span class="form__input-error name-coin-input-error"></span>
+          </div>
+          <div class="input-box__create">
+            <p class="input-text__create">Create a ticker</p>
+            <input type="text" name="ticker-coin" id="ticker-coin-input" class="create create__input_type_ticker-coin" 
+              placeholder="BTC" 
+              required
+              minlength="3" maxlength="5"
+            >
+            <span class="form__input-error ticker-coin-input-error"></span>
+          </div>
+          <div class="input-box__create">
+            <p class="input-text__create">Upload image</p>
+            <input type="url" name="image-coin" id="image-coin-input" class="create create__input_type_image-coin" 
+              placeholder="url" 
+            >
+            <span class="form__input-error image-coin-input-error"></span>
+          </div>
+          <div class="input-box__create">
+            <p class="input-text__create">Create description</p>
+            <input type="text" name="description-coin" id="description-coin-input" class="create create__input_type_description-coin" 
+              placeholder="description" 
+              minlength="5" maxlength="40"
+            >
+            <span class="form__input-error description-coin-input-error"></span>
+          </div>
+          <button type="submit" class="create__button">Create</button>
+        </form>
+        <div class="place-section">
+          <div class="place-section__container">
+            <h3 class="place-section__title">
+              Your memcoins:
+            </h3>
+            <ul class="place-section__list">
+            </ul>
+          </div>
+        </div>
       </div>
-      <ul class="coin-list"></ul>
     </section>
-
     <footer class="footer">
       <div class="footer-info">
         <img
@@ -140,7 +184,7 @@
           </div>
           <div class="input-box">
             <p class="input-text">Create a password</p>
-            <input type="password" name="password" id="password-input" class="popup__input popup__input_type_password" 
+            <input type="text" name="password" id="password-input" class="popup__input popup__input_type_password" 
               placeholder="must be 8 characters" 
               required
               minlength="8" maxlength="30"
@@ -152,7 +196,7 @@
           </div>
           <div class="input-box">
             <p class="input-text">Confirm password</p>
-            <input type="password" name="confirm-password" id="confirm-password-input" class="popup__input popup__input_type_password" 
+            <input type="text" name="confirm-password" id="confirm-password-input" class="popup__input popup__input_type_password" 
               placeholder="repeat password" 
               required
               minlength="8" maxlength="30"
@@ -194,7 +238,7 @@
           </div>
           <div class="input-box">
             <p class="input-text">Password</p>
-            <input type="password" name="password" id="password-input" class="popup__input popup__input_type_password" 
+            <input type="text" name="password" id="password-input" class="popup__input popup__input_type_password" 
               placeholder="enter password" 
               required
               minlength="8" maxlength="30"
@@ -229,6 +273,7 @@
         <p class="memcoin__description">
         </p>
       </div>
+      <button class="memcoin__delete">🗑 Delete</button>
     </li>
   </template>
 

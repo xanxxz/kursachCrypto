@@ -1,8 +1,10 @@
 .create-section {
   margin-block-start: 60px;
   padding-block-end: 60px;
+  margin-inline: 20px;
   display: grid;
   gap: 30px;
+  border-bottom: 1px solid #1A1B23;
 }
 
 .create-section__title {

@@ -90,16 +90,16 @@ app.post('/api/coins', async (req, res) => {
 
 app.get('/api/coins', async (req, res) => {
   try {
-    const ownerEmail = req.query.ownerEmail;
-    if (!ownerEmail) return res.status(400).json({ message: 'ownerEmail is required' });
-
-    const coins = await Memcoin.find({ ownerEmail });
+    const { ownerEmail } = req.query;
+    const filter = ownerEmail ? { ownerEmail } : {};
+    const coins = await Memcoin.find(filter);
     res.json(coins);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Ошибка загрузки мемкоинов' });
+    res.status(500).json({ error: 'Failed to fetch memcoins' });
   }
 });
+
 
 // УДАЛИТЬ мемкоин по ID
 app.delete('/api/coins/:id', async (req, res) => {
