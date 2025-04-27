@@ -5,16 +5,12 @@
 }
 
 *::-webkit-scrollbar {
-  height: 5px;
-  width: 5px;
-}
-
-*::-webkit-scrollbar-track {
-  background: var(--bg-color);
+  height: 4px;
+  width: 4px;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--main-bg-color);
+  background-color: var(--text-color);
   border-radius: 2px;
 }
 

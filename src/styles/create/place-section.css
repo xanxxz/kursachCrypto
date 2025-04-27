@@ -9,7 +9,12 @@
   border-radius: 25px;
   padding: 30px 20px;
   overflow: scroll;
-}
+  }
+
+  .place-section__container::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
 
 .place-section__title {
   font-size: 35px;
