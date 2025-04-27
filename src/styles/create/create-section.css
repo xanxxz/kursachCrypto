@@ -37,6 +37,10 @@
   padding-inline-start: 10px;
 }
 
+.optionally {
+  opacity: .3;
+}
+
 .create {
   inline-size: 350px;
 }

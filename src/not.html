@@ -22,7 +22,7 @@
           <button class="button menu" type="button" onclick="location.href='not.html'">
             Buy / Sell
           </button>
-          <button class="button menu" type="button">
+          <button class="button menu" type="button" onclick="location.href='create.html'">
             Create
           </button>
           <button class="button menu" type="button" onclick="location.href='market.html'">
@@ -47,56 +47,7 @@
     </nav>
   </header>
   <main class="main">
-    <section class="create-section">
-      <h1 class="create-section__title">Create your memcoin for free</h1>
-      <div class="create-section__container">
-        <form class="create__form" name="create">
-          <div class="input-box__create">
-            <p class="input-text__create">Create a name</p>
-            <input type="text" name="name-coin" id="name-coin-input" class="create create__input_type_name-coin" 
-              placeholder="Bitcoin"
-              required 
-              minlength="3" maxlength="12"
-            >
-            <span class="form__input-error name-coin-input-error"></span>
-          </div>
-          <div class="input-box__create">
-            <p class="input-text__create">Create a ticker</p>
-            <input type="text" name="ticker-coin" id="ticker-coin-input" class="create create__input_type_ticker-coin" 
-              placeholder="BTC" 
-              required
-              minlength="3" maxlength="5"
-            >
-            <span class="form__input-error ticker-coin-input-error"></span>
-          </div>
-          <div class="input-box__create">
-            <p class="input-text__create">Upload image <span class="optionally">(optionally)</span></p>
-            <input type="url" name="image-coin" id="image-coin-input" class="create create__input_type_image-coin" 
-              placeholder="https://site.com/image.png" 
-            >
-            <span class="form__input-error image-coin-input-error"></span>
-          </div>
-          <div class="input-box__create">
-            <p class="input-text__create">Create description</p>
-            <input type="text" name="description-coin" id="description-coin-input" class="create create__input_type_description-coin" 
-              placeholder="Enter a short description of your memecoin" 
-              minlength="5" maxlength="40"
-            >
-            <span class="form__input-error description-coin-input-error"></span>
-          </div>
-          <button type="submit" class="create__button">Create</button>
-        </form>
-        <div class="place-section">
-          <div class="place-section__container">
-            <h3 class="place-section__title">
-              Your memcoins:
-            </h3>
-            <ul class="place-section__list">
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    <h1 class="title">Sorry, this page is under development</h1>
     <footer class="footer">
       <div class="footer-info">
         <img
@@ -158,7 +109,6 @@
       </div>
     </footer>
   </main>
-
   <div class="popup-filter-sign-up">
     <div class="popup popup_type_sign-up">
       <div class="popup__content">
@@ -257,25 +207,9 @@
   <div class="popup-filter-not">
     <div class="popup popup_type_not">
       <div class="popup__content">
-        <h3 class="popup__title-not">not yet</h3>
+        <h3 class="popup__title-not">not now</h3>
       </div>
     </div>
   </div>
-
-  <template id="memcoin-template">
-    <li class="places__item memcoin__item">
-      <img class="memcoin__image" src="" alt="" />
-      <div class="memcoin__text">
-        <h2 class="memcoin__title">
-        </h2>
-        <p class="memcoin__ticker">
-        </p>
-        <p class="memcoin__description">
-        </p>
-      </div>
-      <button class="memcoin__delete">🗑 Delete</button>
-    </li>
-  </template>
-
-</body>
+  </body>
 </html>

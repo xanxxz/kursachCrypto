@@ -39,7 +39,7 @@ const updateUI = () => {
       const email = signupForm.email.value;
       const password = signupForm.password.value;
 
-      const response = await fetch('http://localhost:3000/api/register', {
+      const response = await fetch('https://clammy-four-puck.glitch.me/api/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
@@ -64,7 +64,7 @@ const updateUI = () => {
       const email = loginForm.email.value;
       const password = loginForm.password.value;
   
-      const response = await fetch('http://localhost:3000/api/login', {
+      const response = await fetch('https://clammy-four-puck.glitch.me/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),

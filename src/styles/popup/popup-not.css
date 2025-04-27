@@ -2,7 +2,7 @@
   display: none;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .9);
   position: fixed;
   top: 0;
   left: 0;
@@ -16,12 +16,8 @@
   block-size: auto;
 }
 
-.popup_type_not .popup__content {
-  position: relative;
-  top: -350px;
-}
-
 .popup__title-not {
-  font-size: 30px;
-  color: #FF8282;
+  font-size: 100px;
+  color: brown;
+  text-transform: uppercase;
 }

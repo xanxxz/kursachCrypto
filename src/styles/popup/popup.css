@@ -115,3 +115,7 @@
 #password-input {
   -webkit-text-security: disc;
 }
+
+input::placeholder {
+  font-size: 16px;
+}

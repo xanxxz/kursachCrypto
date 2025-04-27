@@ -1,4 +1,4 @@
-import '../pages/index.css';
+import '../pages/not.css';
 import {openModal, closeModal, initOverlayClose} from './popup.js';
 import {enableValidation, clearValidation} from './validation.js';
 import {auth} from './auth.js';
@@ -14,6 +14,7 @@ const logInBtn = document.querySelectorAll('.log-in');
 const notBtn = document.querySelectorAll('.not');
 const closeLogInBtn = document.querySelector('.popup-close__button-sing-in');
 const closeSingUpBtn = document.querySelector('.popup-close__button');
+const indexBtn = document.querySelector('.index-button');
 const btnMenu = Array.from(document.querySelectorAll('.menu'));
 
 const validationConfig = {
@@ -28,6 +29,10 @@ const validationConfig = {
 menuBtnsActive(btnMenu);
 
 auth(closeModal, singUp, logIn);
+
+indexBtn.addEventListener('click', () => {
+  location.href = 'index.html';
+});
 
 enableValidation(validationConfig);
 
@@ -57,7 +62,7 @@ logInBtn.forEach((btns) => {
 notBtn.forEach((btns) => {
   btns.addEventListener('click', () => {
     openModal(not);
-      setTimeout(function() { closeModal(not) }, 1000);
+      setTimeout(function() { closeModal(not) }, 500);
       return false;
   });
 });

@@ -1,10 +1,23 @@
-const btnMenu = Array.from(document.querySelectorAll('.categories__button'));
+export function menuBtnsActive(btnMenu) {
+	const currentPath = window.location.pathname;
+  
+	btnMenu.forEach((btn) => {
+	  const buttonText = btn.textContent.trim().toLowerCase();
 
-btnMenu.forEach((btns) => {
-	btns.addEventListener('click', () => {
-		btnMenu.forEach((btns) => {
-			btns.classList.remove('is-active');
-		});
-		btns.classList.add('is-active');
+	  if (
+		(buttonText.includes('markets') && currentPath.includes('market')) ||
+		(buttonText.includes('create') && currentPath.includes('create')) ||
+		(buttonText.includes('buy / sell') && currentPath.includes('not')) ||
+		(buttonText.includes('business') && currentPath.includes('not')) ||
+		(buttonText.includes('support') && currentPath.includes('not'))
+	  ) {
+		btn.classList.add('actived');
+	  }
+
+	  btn.addEventListener('click', () => {
+		btnMenu.forEach((b) => b.classList.remove('actived'));
+		btn.classList.add('actived');
+	  });
 	});
-});
+  }
+  

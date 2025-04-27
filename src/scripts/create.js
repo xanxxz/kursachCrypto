@@ -2,9 +2,11 @@ import '../pages/create.css';
 import {openModal, closeModal, initOverlayClose} from './popup.js';
 import {enableValidation, clearValidation} from './validation.js';
 import {auth} from './auth.js';
+import {menuBtnsActive} from './menu-button.js';
 
 const singUp = document.querySelector('.popup-filter-sign-up');
 const logIn = document.querySelector('.popup-filter-log-in');
+const create = document.querySelector('.create__form');
 const not = document.querySelector('.popup-filter-not');
 const singUpForm = document.forms['sign-up'];
 const logInForm = document.forms['log-in'];
@@ -14,6 +16,7 @@ const notBtn = document.querySelectorAll('.not');
 const closeLogInBtn = document.querySelector('.popup-close__button-sing-in');
 const closeSingUpBtn = document.querySelector('.popup-close__button');
 const indexBtn = document.querySelector('.index-button');
+const btnMenu = Array.from(document.querySelectorAll('.menu'));
 
 indexBtn.addEventListener('click', () => {
   location.href = 'index.html';
@@ -27,6 +30,10 @@ const validationConfig = {
   inputErrorClass: 'form__input_type_error',
   errorClass: 'form__input-error_active'
 };
+
+menuBtnsActive(btnMenu);
+
+clearValidation(create, validationConfig);
 
 auth(closeModal, singUp, logIn);
 
@@ -62,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!confirm(`Удалить ${coin.name}?`)) return;
   
       try {
-        const res = await fetch(`http://localhost:3000/api/coins/${coin._id}`, {
+        const res = await fetch(`https://clammy-four-puck.glitch.me/api/coins/${coin._id}`, {
           method: 'DELETE',
         });
   
@@ -84,11 +91,12 @@ document.addEventListener('DOMContentLoaded', () => {
   async function loadCoins() {
     listContainer.innerHTML = '';
     try {
-      const res = await fetch(`http://localhost:3000/api/coins?ownerEmail=${encodeURIComponent(email)}`);
+      const res = await fetch(`https://clammy-four-puck.glitch.me/api/coins?ownerEmail=${encodeURIComponent(email)}`);
       const coins = await res.json();
       coins.forEach(renderCoin);
     } catch (err) {
-      console.error('Ошибка при загрузке монет:', err);
+      console.error('Ошибка при загрузке мемкоинов:', err);
+      listContainer.innerHTML = '<li>Не удалось загрузить монеты</li>';
     }
   }
 
@@ -103,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     try {
-      const res = await fetch('http://localhost:3000/api/coins', {
+      const res = await fetch('https://clammy-four-puck.glitch.me/api/coins', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(coin),

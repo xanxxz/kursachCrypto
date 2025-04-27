@@ -4,6 +4,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const Memcoin = require('./src/scripts/memcoinModel');
 
+// mongodb+srv://xanxxz:G3ia50ss4HAdClgM@crypto.lt91nus.mongodb.net/?retryWrites=true&w=majority&appName=Crypto
 
 const app = express();
 const PORT = 3000;
@@ -13,7 +14,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Подключение к MongoDB
-mongoose.connect('mongodb://localhost:27017/kursachCrypto', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/kursachCrypto', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })

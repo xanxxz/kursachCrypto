@@ -2,6 +2,7 @@ import '../pages/market.css';
 import {openModal, closeModal, initOverlayClose} from './popup.js';
 import {enableValidation, clearValidation} from './validation.js';
 import {auth} from './auth.js';
+import {menuBtnsActive} from './menu-button.js';
 
 const singUp = document.querySelector('.popup-filter-sign-up');
 const logIn = document.querySelector('.popup-filter-log-in');
@@ -14,6 +15,7 @@ const notBtn = document.querySelectorAll('.not');
 const closeLogInBtn = document.querySelector('.popup-close__button-sing-in');
 const closeSingUpBtn = document.querySelector('.popup-close__button');
 const indexBtn = document.querySelector('.index-button');
+const btnMenu = Array.from(document.querySelectorAll('.menu'));
 
 const validationConfig = {
   formSelector: '.popup__form',
@@ -23,6 +25,8 @@ const validationConfig = {
   inputErrorClass: 'form__input_type_error',
   errorClass: 'form__input-error_active'
 };
+
+menuBtnsActive(btnMenu);
 
 auth(closeModal, singUp, logIn);
 
@@ -68,7 +72,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const template = document.getElementById('memcoin-template');
 
   try {
-    const res = await fetch('http://localhost:3000/api/coins');
+    const res = await fetch('https://clammy-four-puck.glitch.me/api/coins');
     const coins = await res.json();
 
     coinsList.innerHTML = '';

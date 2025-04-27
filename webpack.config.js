@@ -7,6 +7,7 @@ module.exports = {
     main: './src/scripts/index.js',
     create: './src/scripts/create.js',
     market: './src/scripts/market.js',
+    not: './src/scripts/not.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -66,6 +67,11 @@ module.exports = {
       chunks: ['market'],
       template: 'src/market.html',
       filename: 'market.html'
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ['not'],
+      template: 'src/not.html',
+      filename: 'not.html'
     }),
       new MiniCssExtractPlugin()
   ]

@@ -2,6 +2,7 @@
 @import url('../styles/variables.css');
 @import url('../styles/header.css');
 @import url('../styles/footer.css');
+@import url('../styles/actived.css');
 @import url('../styles/create/create-section.css');
 @import url('../styles/create/place-section.css');
 @import url('../styles/popup/popup.css');
