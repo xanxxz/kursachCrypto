@@ -119,3 +119,60 @@
 input::placeholder {
   font-size: 16px;
 }
+
+@media screen and (min-width: 375px) and (max-width: 440px) {
+  .popup {
+    inline-size: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0;
+    padding: 8px;
+    block-size: auto;
+  }
+
+  .popup_type_log-in {
+    block-size: auto;
+    padding: 8px;
+  }
+  
+  .popup__content {
+    margin-block-start: 30px;
+    gap: 0;
+    inline-size: 100%;
+  }
+  
+  .popup-close__button {
+    display: none;
+  }
+  
+  .popup-close__button-sing-in {
+    display: none;
+  }
+  
+  .popup__title {
+    font-size: 35px;
+    margin-block-end: 30px;
+  }
+  
+  .popup__button {
+    inline-size: 355px;
+  }
+  
+  .input-text {
+    text-align: left;
+    font-size: 22px;
+    color: var(--text-color)
+  }
+  
+  .popup__input {
+    inline-size: 100%;
+  }
+
+  .form__input-error {
+    max-inline-size: 355px;
+  }
+  
+  input::placeholder {
+    font-size: 20px;
+  }
+}

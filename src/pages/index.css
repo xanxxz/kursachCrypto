@@ -20,3 +20,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@media screen and (min-width: 375px) and (max-width: 440px) {
+  body {
+    margin: 0 auto;
+    min-inline-size: 375px;
+    max-inline-size: 440px;
+    min-block-size: 100dvb;
+  }
+}
+

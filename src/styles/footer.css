@@ -42,3 +42,14 @@
   opacity: .3;
   text-align: left;
 }
+
+@media screen and (min-width: 375px) and (max-width: 440px) {
+  .footer {
+    padding-block: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: 140px 60px 60px;
+    block-size: 200px;
+    overflow: hidden;
+    justify-content: space-around
+  }
+}

@@ -58,3 +58,28 @@
   opacity: .6;
   transition: opacity .3s ease;
 }
+
+@media screen and (min-width: 375px) and (max-width: 440px) {
+  .create-section {
+    margin-block-start: 30px;
+    padding-block-end: 30px;
+    margin-inline: 12px;
+    gap: 20px;
+  }
+  
+  .create-section__title {
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 130%;
+    inline-size: 355px;
+  }
+  
+  .create-section__container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create__button {
+    margin: 0 auto;
+  }
+}

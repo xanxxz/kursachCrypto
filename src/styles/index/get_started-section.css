@@ -30,3 +30,24 @@
 .get_started-section__text {
   max-inline-size: 580px;
 }
+
+@media screen and (min-width: 375px) and (max-width: 440px) {
+  .get_started-section {
+    padding-block: 80px;
+    gap: 20px;
+  }
+  
+  .get_started-section__container {
+    max-inline-size: auto;
+    max-block-size: 500px;
+    gap: 16px;
+  }
+  
+  .get_started-section__title {
+    font-size: 45px;
+  }
+  
+  .get_started-section__text {
+    max-inline-size: 300px;
+  }
+}

@@ -55,3 +55,42 @@
   gap: 6px;
   align-items: center;
 }
+
+@media screen and (min-width: 375px) and (max-width: 440px) {
+  .card-section {
+    padding-block-start: 20px;
+    padding-block-end: 0;
+  }
+  
+  .card-section__list {
+    block-size: auto;
+    gap: 15px;
+    flex-direction: column;
+  }
+  
+  .card-section__list-item {
+    padding: 20px 16px;
+    gap: 25px;
+    inline-size: 260px;
+    block-size: 260px;
+  }
+  
+  .card-section__list-item__main-box {
+    gap: 5px;
+  }
+  
+  .card-section__list-item__image {
+    inline-size: 60px;
+    block-size: 60px;
+  }
+  
+  .card-section__list-item__title {
+    font-size: 27px;
+  }
+  
+  .card-section__list-item__text {
+    block-size: 72px;
+    overflow: hidden;
+    font-size: 16px;
+  }
+}

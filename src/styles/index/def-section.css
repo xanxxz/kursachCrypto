@@ -31,3 +31,35 @@
 .container-info {
   text-align: left;
 }
+
+@media screen and (min-width: 375px) and (max-width: 440px) {
+  .def-section {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center
+  }
+  
+  .get_started-section__container-text {
+    gap: 10px;
+    align-items: center
+  }
+  
+  .get_started-section__container-image {
+    min-inline-size: 250px;
+  }
+  
+  .get_started-section__container-info {
+    max-inline-size: 330px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .container-info {
+    text-align: center;
+  }
+
+  .div {
+    display: flex;
+    justify-content: center
+  }
+}

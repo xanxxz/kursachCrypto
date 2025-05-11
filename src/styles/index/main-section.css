@@ -26,3 +26,24 @@
 .main-section__subtitle {
   max-inline-size: 500px;
 }
+
+@media screen and (min-width: 375px) and (max-width: 440px) {
+  .main-section {
+    margin-block-start: 60px;
+    margin-block-end: 60px;
+  }
+  
+  .main-section__content {
+    gap: 20px;
+  }
+  
+  .main-section__title {
+    font-size: 55px;
+    font-weight: 700;
+    max-inline-size: 330px;
+  }
+
+  .main-section__subtitle {
+    max-inline-size: 300px;
+  }
+}

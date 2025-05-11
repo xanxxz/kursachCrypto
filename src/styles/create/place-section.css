@@ -82,3 +82,30 @@
   opacity: .6;
   transition: opacity .3s ease;
 }
+
+@media screen and (min-width: 375px) and (max-width: 440px) {
+  .place-section {
+    margin-block-start: 30px;
+  }
+
+  .place-section__container {
+    background-color: transparent;
+    inline-size: 355px;
+    margin-inline: 0;
+    block-size: 500px;
+    border-radius: 25px;
+    padding: 10px 0;
+    overflow: none;
+    }
+  
+  .place-section__title {
+    font-size: 30px;
+    text-align: left;
+  }
+  
+  .place-section__list {
+    padding: 20px 10px;
+    gap: 10px;
+    overflow: scroll;
+  }
+}

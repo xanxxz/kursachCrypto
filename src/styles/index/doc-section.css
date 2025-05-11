@@ -10,3 +10,21 @@
   display: flex;
   justify-content: end;
 }
+
+@media screen and (min-width: 375px) and (max-width: 440px) {
+  .doc-section {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    border-bottom: 1px solid #1A1B23;
+  }
+  
+  .doc-section .get_started-section__container-image {
+    justify-content: center;
+  }
+
+  .div-doc {
+    display: flex;
+    justify-content: center;
+  }
+}

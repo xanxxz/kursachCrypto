@@ -6,7 +6,6 @@
   top: 10px;
 }
 
-
 .header__menu-list {
   display: flex;
   justify-content: space-between;
@@ -47,4 +46,34 @@
 .sign-up {
   background: linear-gradient(225deg, #18C8FF 14.89%, #933FFE 85.85%);
   border: 1px solid #633FFE 14.89%;
+}
+
+@media screen and (min-width: 375px) and (max-width: 440px) {
+  .header__menu {
+    margin-block-start: 8px;
+    margin-block-end: 8px;
+    margin-block-start: 30px;
+    margin-inline: 0;
+  }
+
+  .header__menu-list {
+    font-size: 16px;
+    display: grid;
+    gap: 35px;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .Ilogo {
+    scale: 2;
+  }
+
+  .header__menu-list-item__buttons {
+    margin-inline-start: 0;
+    gap: 15px;
+  }
+  
+  .header__menu-list-item__sign-buttons {
+    gap: 5px;
+  }
 }
