@@ -155,7 +155,7 @@ input::placeholder {
   }
   
   .popup__button {
-    inline-size: 355px;
+    inline-size: 100%;
   }
   
   .input-text {
